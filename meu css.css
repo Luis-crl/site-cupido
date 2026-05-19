@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-color: #d3d3d3;
+}
+
+.topo {
+    background-color: #47f047; /* verde */
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    background-color: #d9d9d9;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-pesquisa input {
+    width: 400px;
+    max-width: 80%;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+    background-color: #f0f0f0;
+}
+.container{
+    background-color:#F3F5D3;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+
+
+}
+.box-video {
+    width: 500px;           /* Tamanho do quadro */
+    height: auto;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;       /* Garante que nada saia da borda */
+    background-color: #000;
+}
+.box-video1 {
+    width: 400px;           /* Tamanho do quadro */
+    height: auto;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;       /* Garante que nada saia da borda */
+    background-color: #000;
+}
+.box-video2 {
+    width: auto;           /* Tamanho do quadro */
+    height: auto;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    overflow: hidden;       /* Garante que nada saia da borda */
+    background-color: #000;
+}
+a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+
+    .topo{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .barra-pesquisa input{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    p, li{
+        font-size: 16px;
+    }
+
+    .jogo-container iframe{
+        height: 500px;
+    }
+}
